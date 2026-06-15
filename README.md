@@ -1,7 +1,7 @@
-# [cite_start]TP2 - Criptografía [cite: 2]
-### [cite_start]Seguridad Informática [cite: 1] - [cite_start]Universidad Nacional de Quilmes [cite: 3]
+# TP2 - Criptografía
+### Seguridad Informática - Universidad Nacional de Quilmes 
 
-Herramienta de consola (CLI) desarrollada en Python para el Trabajo Práctico. [cite_start]El programa permite tomar un archivo cualquiera y devolver el mismo archivo cifrado con AES-256 [cite: 8][cite_start], así como tomar por entrada un archivo cifrado con AES-256 y devolver el archivo original[cite: 9].
+Herramienta de consola (CLI) desarrollada en Python para el Trabajo Práctico. El programa permite tomar un archivo cualquiera y devolver el mismo archivo cifrado con AES-256, así como tomar por entrada un archivo cifrado con AES-256 y devolver el archivo original.
 
 ## 🛠️ Requisitos Previos
 
