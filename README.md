@@ -16,10 +16,9 @@ Para correr el código fuente y hacer pruebas locales, necesitan tener instalado
 ## Cómo usar el script (Modo Desarrollo)
 
 El script se ejecuta directamente desde la consola pasando 4 parámetros obligatorios: la acción (cifrar o descifrar), el archivo de entrada, el nombre del archivo de salida y una contraseña.
-1. Para encriptar un archivo: 
+1.  Generar el ejecutable en un solo archivo:
+python -m PyInstaller --onefile cripto_AES256.py
+2. Para encriptar un archivo: 
 dist/ cripto_tp2.py cifrar documento.pdf documento_cifrado.aes miclave123
-2. Para desencriptar un archivo:
+3. Para desencriptar un archivo:
 dist/ cripto_tp2.py descifrar documento_cifrado.aes documento_recuperado.pdf miclave123
-3. Instalar: pip install pyinstaller
-4. Generar el ejecutable en un solo archivo:
-python -m PyInstaller --onefile cripto_tp2.py
