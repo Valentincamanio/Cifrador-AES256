@@ -15,7 +15,6 @@ dist/
 *.dylib
 
 # Archivos de prueba locales que puedan crear
-prueba.txt
 *.aes
 archivo_recuperado.*
 

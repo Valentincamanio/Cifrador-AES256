@@ -9,6 +9,8 @@ def generar_clave(contrasenia_usuario: str) -> bytes:
     # Hacemos un hash SHA-256 para asegurarnos de que la clave tenga justo 32 bytes (lo que pide AES-256)
     return hashlib.sha256(contrasenia_usuario.encode('utf-8')).digest()
 
+# def config
+
 def cifrar_archivo(ruta_origen: str, ruta_destino: str, contrasenia: str):
     clave = generar_clave(contrasenia)
     iv = os.urandom(16) # Metemos un IV aleatorio para más seguridad
