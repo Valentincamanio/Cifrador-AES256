@@ -6,14 +6,13 @@ from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.backends import default_backend
 
 def generar_clave(contrasenia_usuario: str) -> bytes:
-    # usamos SHA-256 para asegurarnos de que la clave tenga justo 32 bytes (lo que usa AES-256)
     return hashlib.sha256(contrasenia_usuario.encode('utf-8')).digest()
 
 def cifrar_archivo(ruta_origen: str, ruta_destino: str, contrasenia: str):
     clave = generar_clave(contrasenia)
     iv = os.urandom(16) # Metemos un IV aleatorio para más seguridad
     
-    # lee archivo recibido
+    # lee el archivo recibido
     with open(ruta_origen, 'rb') as archivo_in:
         datos_originales = archivo_in.read()
         

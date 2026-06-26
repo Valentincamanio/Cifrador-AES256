@@ -1,4 +1,4 @@
-# Archivos compilados de Python y temporales
+# Archivos de Python 
 __pycache__/
 *.py[cod]
 *$py.class
@@ -8,17 +8,17 @@ build/
 dist/
 *.spec
 
-# Ejecutables y binarios (Para evitar subir el .exe por error)
+# Ejecutables 
 *.exe
 *.dll
 *.so
 *.dylib
 
-# Archivos de prueba locales que puedan crear
+# Archivos de prueba locales 
 *.aes
 archivo_recuperado.*
 
-# Configuraciones locales de editores de código (VS Code, IntelliJ, etc.)
+# Configuraciones locales 
 .vscode/
 .idea/
 *.swp
